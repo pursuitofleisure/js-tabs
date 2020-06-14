@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs by Diana Le</title>
+  <link rel="stylesheet" href="./tabs.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="tabs">
+      <div role="tablist" aria-label="Programming Languages">
+        <button role="tab" aria-selected="true" id="html">
+          HTML
+        </button>
+        <button role="tab" aria-selected="false" id="css">CSS
+        </button>
+        <button role="tab" aria-selected="false" id="js">
+          JavaScript
+        </button>
+      </div>
+      <div role="tabpanel" aria-labelledby="html">
+        <p>HTML is great!</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="css" hidden>
+        <p>CSS is great</p>
+      </div>
+      <div role="tabpanel" aria-labelledby="js" hidden>
+        <p>JavaScript is great!</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container"><a href="https://github.com/pursuitofleisure/js-tabs" target="_blank">View on
+        Github</a>
+      <a href="https://www.pursuitofleisure.com">Say Hi</a></div>
+  </footer>
+  <script src="./tabs.js"></script>
+</body>
+
+</html>
